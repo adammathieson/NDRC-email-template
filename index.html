@@ -31,7 +31,6 @@
             letter-spacing: .5em;
             font-size: 1.75rem;
             text-align: center;
-
         }
         @media only screen and (max-width: 510px) {
             .header-title {
@@ -47,7 +46,6 @@
             max-width: 100%;
             margin: 0 auto;
         }
-
         img {
             margin: 0 auto;
             width: 95% !important;
@@ -63,10 +61,39 @@
             width: 80%;
             margin: 2em auto 2em auto;
         }
+        .hello {
+            display: inline;
+        }
+        .hand {
+            width: 20px;
+            display: inline-block;
+            transform-origin: 50% 50%;
+            animation: wave 2s alternate-reverse infinite linear;
+        }
+        @keyframes wave {
+            0% {
+                transform: rotate(0deg)
+            }
+            20% {
+                transform: rotate(10deg)
+            }
+            40% {
+                transform: rotate(20deg)
+            }
+            30% {
+                transform: rotate(30deg)
+            }
+            40% {
+                transform: rotate(40deg)
+            }
+            100% {
+                transform: rotate(0deg)
+            }
+        }
         h2 {
             text-align: center;
             color: #5F5F5F;
-            padding: 2em 0 2em 0;
+            padding: 2em 0.25em;
             letter-spacing: .175em;
         }
         a {
@@ -80,7 +107,6 @@
             border-radius: 6px;
             text-align: center;
             margin: 0 auto 3em auto;
-            
         }
         .footer {
             background: #0F95DE;
@@ -91,16 +117,13 @@
         }
         .copyright {
             padding-top: 3em;
-            padding-bottom: .5em
+            padding-bottom: 1em;
         }
         .name {
-            padding-top: .5em;
-            padding-bottom: 3em
+            padding-bottom: 3em;
         }
 
-
     </style>
-
 </head>
 <body>
     <div class="wrapper">
@@ -108,16 +131,15 @@
             <div class="header-title">
                 <h1>Can you spot<br>your district?</h1>
             </div>
-
         </div>
         <div class="img-container">
             <img src="https://cloud1.email2go.io/9c82c7143c102b71c593d98d96093fde/e537fac0f5c7fdc963b387601d4e749b1bf809781df7572f0e293e9568dab95a.png" alt="">
-            
         </div>
         <div class="mid-content">
             <div class="msg-container">
-                <p>Hello 👋<br>I'm Adam – and I created this quick proof of work to give an idea of what I can bring to the organization.<br></p>
-                <!-- <p class="signature">–Adam</p> -->
+                <p class="hello">Hello</p>
+                <div class="hand">👋</div>
+                <p>I'm Adam. I put together this email as quick proof of work to give you an idea of what I can bring to the organization.</p>
             </div>
         </div>
         <div class="cta">
@@ -125,7 +147,7 @@
             <a href="https://democraticredistricting.com/"><div class="cta-btn">Learn More</div></a>
         </div>
         <div class="footer">
-            <p class="copyright">Copyright 2020 ©</p>
+            <p class="copyright">Copyright © 2020</p>
             <p class="name">Adam Mathieson</p>
         </div>
 
